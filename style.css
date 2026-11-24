@@ -1,0 +1,24 @@
+.banner-warzone {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+              url('img/banner\ warzone.webp') center/cover;
+}
+
+
+.fondo-oscuro {
+  background-color: #212529;
+}
+
+
+.caja-texto {
+  max-width: 700px;
+}
+
+.caja-acordeon {
+  max-width: 750px;
+}
+
+.logo-grande {
+  width: 140px;
+  height: 140px;
+  font-size: 3rem;
+}
