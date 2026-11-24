@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call of Duty: Warzone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="cuerpo">
+
+  <div class="bg-light border-bottom py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span class="fw-bold text-dark">Controles de Interfaz:</span>
+      <div>
+        <button class="btn btn-sm border" onclick="cambiarLetra(12)">Letra Pequeña</button>
+        <button class="btn btn-sm border" onclick="cambiarLetra(16)">Letra Normal</button>
+        <button class="btn btn-sm border" onclick="cambiarLetra(20)">Letra Grande</button>
+        <button class="btn btn-sm btn-light border" onclick="cambiarFondo('white', 'black')">Fondo Claro</button>
+        <button class="btn btn-sm btn-dark" onclick="cambiarFondo('black', 'white')">Fondo Oscuro</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <span class="navbar-brand fw-bold">WARZONE</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="menuNavegacion">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#modos">Modos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#escuadron">Escuadrón</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <header class="banner-warzone text-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <h1 class="fw-bold">Domina el campo de batalla en Warzone</h1>
+          <p class="my-3">Explora los nuevos mapas, configura tus mejores clases de armas y prepárate para la victoria en cada partida.</p>
+          <a href="#modos" class="btn btn-success px-4">Ver Modos de Juego</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="img/cod-warzone-1.jpg" alt="Wzzz" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+  <section class="bg-dark py-4">
+    <div class="container">
+      <form class="row g-3">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Tu ID de Activision">
+        </div>
+        <div class="col-md-4">
+          <input type="email" class="form-control" placeholder="Tu Correo Electrónico">
+        </div>
+        <div class="col-md-4 d-grid">
+          <button type="submit" class="btn btn-success">Unirse al Torneo</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  
+  <section id="modos" class="container my-5">
+    <div class="row g-4 text-center">
+      <div class="col-md-3">
+        <div class="card h-100 border-success p-3 text-dark">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Battle Royale</h5>
+            <p class="card-text">Hasta 150 jugadores luchando por ser el último escuadrón en pie mientras el gas se cierra.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 bg-success text-white p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Resurgimiento</h5>
+            <p class="card-text">Acción rápida en mapas compactos donde puedes reaparecer si tu equipo sigue con vida.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 border-success p-3 text-dark">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Saqueo</h5>
+            <p class="card-text">Compite por recolectar la mayor cantidad de dinero posible en todo el mapa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 bg-success text-white p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Partidas Clasificatorias</h5>
+            <p class="card-text">Demuestra tu nivel competitivo y sube de división frente a los mejores jugadores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-5 border-top border-bottom">
+    <div class="container text-center">
+      <h2 class="fw-bold">¿Por qué jugar en PC?</h2>
+      <p class="mx-auto mb-4 caja-texto">Disfruta de tasas de refresco desbloqueadas, campo de visión ajustable y máxima precisión con teclado y ratón o control competitivo.</p>
+
+      <div class="accordion mx-auto caja-acordeon text-start" id="acordeonWarzone">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item1">
+              ¿Cuáles son los requisitos recomendados en PC?
+            </button>
+          </h2>
+          <div id="item1" class="accordion-collapse collapse show" data-bs-parent="#acordeonWarzone">
+            <div class="accordion-body">
+              Se recomienda un procesador moderno de 6 núcleos, 16 GB o 32 GB de memoria RAM DDR5, tarjeta gráfica RTX y almacenamiento SSD NVMe para cargas rápidas.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item2">
+              ¿El juego cuenta con progreso cruzado?
+            </button>
+          </h2>
+          <div id="item2" class="accordion-collapse collapse" data-bs-parent="#acordeonWarzone">
+            <div class="accordion-body">
+              Sí, al vincular tu cuenta de Activision conservas tus armas, operadores y nivel entre PC y consolas.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item3">
+              ¿Cómo mejorar los FPS y reducir la latencia?
+            </button>
+          </h2>
+          <div id="item3" class="accordion-collapse collapse" data-bs-parent="#acordeonWarzone">
+            <div class="accordion-body">
+              Activa NVIDIA Reflex en modo Boost, usa conexión por cable Ethernet directo y ajusta los gráficos en calidad competitiva.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="escuadron" class="fondo-oscuro text-white py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold">Nuestro Escuadrón</h2>
+      <p class="mx-auto mb-5 caja-texto">Conoce los roles principales dentro de nuestro equipo competitivo de cuatro jugadores.</p>
+
+      <div class="row g-4">
+        <div class="col-12 col-lg-6 col-xl-3">
+          <div class="card text-dark h-100 p-3">
+            <div class="mx-auto my-2"></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Juan Valencia</h5>
+              <p class="card-text">Líder de escuadrón y especialista en enfrentamientos a corta distancia (SMG).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-3">
+          <div class="card text-dark h-100 p-3">
+            <div class="mx-auto my-2"></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mateo Pérez</h5>
+              <p class="card-text">Francotirador encargado de cubrir rotaciones y vigilar zonas altas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-3">
+          <div class="card text-dark h-100 p-3">
+            <div class="mx-auto my-2"></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Sofía Castro</h5>
+              <p class="card-text">Soporte táctico, manejo de rachas de bajas y control de suministros.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-3">
+          <div class="card text-dark h-100 p-3">
+            <div class="mx-auto my-2"></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Daniel Ruiz</h5>
+              <p class="card-text">Asalto de media distancia y encargado de asegurar contratos en el mapa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contacto" class="container my-5">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-9">
+        <h3 class="fw-bold">Contacto del Clan</h3>
+        <p>¿Quieres jugar partidas privadas o unirte a nuestro equipo? Escríbenos.</p>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nombre o Gamertag">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Correo electrónico">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-success">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-3 text-center">
+        <div class="logo-grande bg-success text-white fw-bold d-inline-flex align-items-center justify-content-center rounded">
+          WZ
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="fondo-oscuro text-white text-center py-3">
+    <p class="mb-0">Copyright &copy 2026 Warzone</p>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
